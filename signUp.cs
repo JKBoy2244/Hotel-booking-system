@@ -6,11 +6,11 @@ using System.Text.RegularExpressions;
 
 interface signUp {
 
-  public void firstName();
-  public void lastName();
-  public void age();
-  public void emailAddress();
-  public void passWord();
-  public void confirmPassword();
+  void firstName();
+  void lastName();
+  void age();
+  void emailAddress();
+  void passWord();
+  void confirmPassword();
 
 }
