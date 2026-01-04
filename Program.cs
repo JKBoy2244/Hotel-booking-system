@@ -15,6 +15,13 @@ class Program {
     user.confirmPassword();
     user.display();
     user.confirm();
+
+    roomBooking book = new confirmBooking("","","","",0);
+    book.roomType();
+    book.roomNumber();
+    book.checkInDate();
+    book.checkOutDate();
+    book.numberOfPeople();
     
   }
 }
