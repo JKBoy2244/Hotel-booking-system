@@ -14,11 +14,11 @@ abstract class createAccount : signUp {
 
   private const int maxAttempts = 3;
 
-  protected List<string> firstNames = new List<string>();
-  protected List<string> lastNames = new List<string>();
-  protected List<int> ages = new List<int>();
-  protected List<string> emailAddresses = new List<string>();
-  protected List<string> passWords = new List<string>();
+  protected static List<string> firstNames = new List<string>();
+  protected static List<string> lastNames = new List<string>();
+  protected static List<int> ages = new List<int>();
+  protected static List<string> emailAddresses = new List<string>();
+  protected static List<string> passWords = new List<string>();
 
   public createAccount(String firstName, String lastName, int age, String emailAddress, String passWord, String confirmPassword) {
 
