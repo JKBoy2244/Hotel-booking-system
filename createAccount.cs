@@ -20,6 +20,18 @@ abstract class createAccount : signUp {
   protected static List<string> emailAddresses = new List<string>();
   protected static List<string> passWords = new List<string>();
 
+  public static int getRegisteredUserCount() {
+    return firstNames.Count;
+  }
+
+  public static List<string> getEmailAddresses() {
+    return emailAddresses;
+  }
+
+  public static List<string> getPassWords() {
+    return passWords;
+  }
+
   public createAccount(String firstName, String lastName, int age, String emailAddress, String passWord, String confirmPassword) {
 
 
