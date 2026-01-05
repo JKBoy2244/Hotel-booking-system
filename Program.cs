@@ -20,6 +20,12 @@ class Program {
 
         login loginObj = new login();
         loginObj.loginUser(createAccount.getEmailAddresses(), createAccount.getPassWords());
+
+        Console.WriteLine("Re-enter email address to check booking: ");
+        string email = Console.ReadLine();
+        BookingStatus Info = new BookingStatus();
+        Info.bookingInformation(email);
+        
       }
 
       if (option.Equals("SignUp"))  {
