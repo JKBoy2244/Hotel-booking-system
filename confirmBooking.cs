@@ -15,3 +15,8 @@ class confirmBooking : roomBooking {
          Console.WriteLine($"{roomTypes[i]} {roomNumbers[i]} {checkInDates[i]} {checkOutDates[i]} {NumbersOfPeople[i]}");
      }
   }
+
+  public override void confirm() {
+    Console.WriteLine("Booking confirmed - Step 2 complete!");
+  }
+}
