@@ -6,22 +6,58 @@ using System.Text.RegularExpressions;
 class Program {
   public static void Main (string[] args) {
 
-    confirmCreateAccount user = new confirmCreateAccount("","",0,"","","");
-    user.firstName();
-    user.lastName();
-    user.age();
-    user.emailAddress();
-    user.passWord();
-    user.confirmPassword();
-    user.display();
-    user.confirm();
+    while (true) {
 
-    roomBooking book = new confirmBooking("","","","",0);
-    book.roomType();
-    book.roomNumber();
-    book.checkInDate();
-    book.checkOutDate();
-    book.numberOfPeople();
+      Console.WriteLine("Select Login or SignUp!");
+      String option = Console.ReadLine();
+
+      if (option.Equals("Login")) {
+
+        if (createAccount.getRegisteredUserCount() == 0) {
+          Console.WriteLine("Sorry, no one has registered so not possible to log in!");
+          continue;
+        }
+
+        login loginObj = new login();
+        loginObj.loginUser(createAccount.getEmailAddresses(), createAccount.getPassWords());
+      }
+
+      if (option.Equals("SignUp"))  {
+      
+        confirmCreateAccount user = new confirmCreateAccount("","",0,"","","");
+        user.firstName();
+        user.lastName();
+        user.age();
+        user.emailAddress();
+        user.passWord();
+        user.confirmPassword();
+        user.display();
+        user.confirm();
+
+        roomBooking book = new confirmBooking("","","","",0);
+        book.roomType();
+        book.roomNumber();
+        book.checkInDate();
+        book.checkOutDate();
+        book.numberOfPeople();
+
+        DateTime.TryParse(book.getRoomCheckInDate(), out DateTime parsedCheckInDate);
+        DateTime.TryParse(book.getRoomCheckOutDate(), out DateTime parsedCheckOutDate);
     
+        Payment cost = new Payment();
+        cost.calculateCost(parsedCheckInDate, parsedCheckOutDate, book.getNumberOfPeople(), book.getRoomType());
+    
+        confirmPayment confirm = new confirmPayment();
+        confirm.confirm();
+
+    }
+
+      else {
+
+         Console.WriteLine("Invalid Option. Please try again!");
+         continue;
+        
+      }
+   }
   }
 }
