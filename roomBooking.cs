@@ -15,11 +15,18 @@ abstract class roomBooking {
 
   private const int maxAttempts = 3;
 
-  protected List<string> roomTypes = new List<string>();
-  protected List<string> roomNumbers = new List<string>();
-  protected List<string> checkInDates = new List<string>();
-  protected List<string> checkOutDates = new List<string>();
-  protected List<int> NumbersOfPeople = new List<int>();
+  protected static List<string> roomTypes = new List<string>();
+  protected static List<string> roomNumbers = new List<string>();
+  protected static List<string> checkInDates = new List<string>();
+  protected static List<string> checkOutDates = new List<string>();
+  protected static List<int> NumbersOfPeople = new List<int>();
+
+  public static List<string> getRoomTypes() { return roomTypes; }
+  public static List<string> getRoomNumbers() { return roomNumbers; }
+  public static List<string> getCheckInDates() { return checkInDates; }
+  public static List<string> getCheckOutDates() { return checkOutDates; }
+  public static List<int> getNumbersOfPeople() { return NumbersOfPeople; }
+  public static int getBookingCount() { return roomTypes.Count; }
 
   
   public roomBooking(String roomType, String roomNumber, String checkInDate, String checkOutDate, int numberOfPeople) {
