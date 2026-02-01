@@ -11,9 +11,9 @@ class Program {
     while (true) {
 
       Console.WriteLine("Select Login or SignUp!");
-      String option = Console.ReadLine();
+      var option = Console.ReadLine()?.Trim();
 
-      if (option.Equals("Login")) {
+      if (string.Equals(option, "Login", StringComparison.OrdinalIgnoreCase)) {
 
         if (createAccount.getRegisteredUserCount() == 0) {
           Console.WriteLine("Sorry, no one has registered so not possible to log in!");
@@ -30,7 +30,7 @@ class Program {
         
       }
 
-      else if (option.Equals("SignUp"))  {
+      else if (string.Equals(option, "Login", StringComparison.OrdinalIgnoreCase))  {
       
         confirmCreateAccount user = new confirmCreateAccount("","",0,"","","");
         user.firstName();
