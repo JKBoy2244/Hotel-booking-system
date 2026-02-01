@@ -1,9 +1,9 @@
-using HotelBookingSystem.Interfaces;
-
 using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+
+namespace HotelBookingSystem.Interfaces;
 
 abstract class createAccount : ISignUp {
 
