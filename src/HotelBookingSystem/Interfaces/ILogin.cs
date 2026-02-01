@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 interface ILogin {
 
-  public void emailAddress();
-  public void passWord();
+   void emailAddress();
+   void passWord();
 
 }
