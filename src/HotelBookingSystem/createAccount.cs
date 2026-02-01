@@ -262,8 +262,6 @@ abstract class createAccount : ISignUp {
          continue;
       }
 
-       foreach (string i in emailAddresses) {
-
          if (emailAddresses.Contains(emailAddress)) {
 
            if (attempts == maxAttempts) {
@@ -274,7 +272,6 @@ abstract class createAccount : ISignUp {
               Console.WriteLine("Sorry, that email address is already taken!");
               continue;
            }
-         }
 
        emailAddresses.Add(emailAddress);
        this._emailAddress = emailAddress;
