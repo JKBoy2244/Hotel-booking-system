@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 
-interface IsignUp {
+interface ISignUp {
 
   void firstName();
   void lastName();
