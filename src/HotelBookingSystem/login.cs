@@ -14,7 +14,7 @@ class login {
 
     bool found = false;
     for (int i = 0; i < emailAddresses.Count; i++) {
-      if (email != null && password != null && emailAddresses[i].Equals(passWords[i])) {
+      if (email != null && password != null && emailAddresses[i].Equals(email) && passWords[i].Equals(password)) {
         found = true;
         break;
       }
