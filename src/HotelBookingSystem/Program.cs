@@ -30,7 +30,7 @@ class Program {
         
       }
 
-      else if (string.Equals(option, "Login", StringComparison.OrdinalIgnoreCase))  {
+      else if (string.Equals(option, "SignUp", StringComparison.OrdinalIgnoreCase))  {
       
         confirmCreateAccount user = new confirmCreateAccount("","",0,"","","");
         user.firstName();
