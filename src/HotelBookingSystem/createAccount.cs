@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-abstract class createAccount : signUp {
+abstract class createAccount : ISignUp {
 
   private String _firstName;
   private String _lastName;
