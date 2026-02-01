@@ -28,7 +28,7 @@ class Program {
         
       }
 
-      if (option.Equals("SignUp"))  {
+      else if (option.Equals("SignUp"))  {
       
         confirmCreateAccount user = new confirmCreateAccount("","",0,"","","");
         user.firstName();
