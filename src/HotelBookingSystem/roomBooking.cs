@@ -66,7 +66,7 @@ abstract class roomBooking {
 
   public void setRoomType(String roomType) {
 
-    if (roomType == null || !roomType.Equals("Single_room") || !roomType.Equals("Double_room")) {
+    if (roomType == null || !roomType.Equals("Single_room") && !roomType.Equals("Double_room")) {
 
       throw new ArgumentException("Invalid choice. Try again please!");
     }
