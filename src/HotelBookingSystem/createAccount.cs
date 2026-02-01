@@ -144,7 +144,7 @@ abstract class createAccount : ISignUp {
   public void setconfirmPassword(String confirmPassword) {
 
 
-     if ((_passWord != confirmPassword) || confirmPassword == null) {
+     if (confirmPassword == null || !string.Equals(_passWord, confirmPassword)) {
 
        throw new ArgumentException("confirm password dont equal password");
      } 
