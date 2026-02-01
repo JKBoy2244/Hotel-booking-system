@@ -1,9 +1,9 @@
-namespace HotelBookingSystem;
-
 using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+
+namespace HotelBookingSystem;
 
 
 abstract class roomBooking {
