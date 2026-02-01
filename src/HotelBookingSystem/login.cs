@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-class login {
+class login : ILogin {
 
   public void loginUser(List<string> emailAddresses, List<string> passWords) {
     
