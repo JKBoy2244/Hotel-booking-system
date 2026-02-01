@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 
 
-interface Login {
+interface ILogin {
 
   public void emailAddress();
   public void passWord();
