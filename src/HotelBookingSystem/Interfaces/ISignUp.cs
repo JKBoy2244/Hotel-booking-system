@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 
-interface ISignUp {
+public interface ISignUp {
 
   void firstName();
   void lastName();
