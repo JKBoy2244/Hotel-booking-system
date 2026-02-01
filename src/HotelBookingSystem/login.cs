@@ -1,4 +1,4 @@
-namespace HotelBookingSystem;
+using HotelBookingSystem.Interfaces;
 
 using System;
 using System.Linq;
