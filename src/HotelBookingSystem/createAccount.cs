@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace HotelBookingSystems;
+namespace HotelBookingSystem;
 
 abstract class createAccount : ISignUp {
 
