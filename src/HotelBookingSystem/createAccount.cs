@@ -158,7 +158,7 @@ abstract class createAccount : ISignUp {
     Console.WriteLine("You have " + (maxAttempts - attempts) + " attempts left!");
   }
 
-  void firstName()  {
+  public void firstName()  {
 
     int attempts = 0;
     String firstName = "";
@@ -187,7 +187,7 @@ abstract class createAccount : ISignUp {
       }  
   }
 
-  void lastName()  {
+  public void lastName()  {
 
     int attempts = 0;
     String lastName = "";
@@ -216,7 +216,7 @@ abstract class createAccount : ISignUp {
       }  
    }
 
-  void age() {
+  public void age() {
 
     int attempts = 0;
 
@@ -243,7 +243,7 @@ abstract class createAccount : ISignUp {
     }
   }
 
-  void emailAddress() {
+  public void emailAddress() {
 
      int attempts = 0;
      String emailAddress = "";
@@ -281,7 +281,7 @@ abstract class createAccount : ISignUp {
    }
   }
 
- void passWord()  {
+ public void passWord()  {
 
    int attempts = 0;
    String passWord = "";
@@ -308,7 +308,7 @@ abstract class createAccount : ISignUp {
    }
  }
 
-   void confirmPassword()  {
+   public void confirmPassword()  {
 
       int attempts = 0;
       String confirmPassword = "";
