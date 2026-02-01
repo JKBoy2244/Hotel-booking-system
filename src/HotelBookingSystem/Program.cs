@@ -47,8 +47,10 @@ class Program {
         book.checkOutDate();
         book.numberOfPeople();
 
-        DateTime.TryParse(book.getRoomCheckInDate(), out DateTime parsedCheckInDate);
-        DateTime.TryParse(book.getRoomCheckOutDate(), out DateTime parsedCheckOutDate);
+        if (!DateTime.TryParse(book.getRoomCheckInDate(), out var parsedCheckInDate) ||!DateTime.TryParse(book.getRoomCheckOutDate(), out var parsedCheckOutDate)) {
+          Console.WriteLine("Invalid dates. Booking cancelled.");
+          continue;
+        }
     
         Payment cost = new Payment();
         cost.calculateCost(parsedCheckInDate, parsedCheckOutDate, book.getNumberOfPeople(), book.getRoomType());
